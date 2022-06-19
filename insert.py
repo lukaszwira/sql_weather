@@ -10,3 +10,5 @@ for row in result:
     stations_conn.execute(ins)
 
 print(result)
+
+stations_conn.execute("SELECT * FROM stations LIMIT 5").fetchall()
